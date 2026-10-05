@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hasin Shaikh | Motion & AI Designer</title>
+    <meta name="description" content="Motion Graphics, AI Design & Video Editing. Currently learning at Sixth Sense Animation Academy. Let's create something amazing together." />
+    <meta property="og:title" content="Hasin Shaikh | Motion & AI Designer" />
+    <meta property="og:description" content="Motion Graphics, AI Design & Video Editing. Currently learning at Sixth Sense Animation Academy. Let's create something amazing together." />
+    <meta name="theme-color" content="#7CFC00" />
+
+    <!-- DNS Prefetch + Preconnect — Shaves 100-300ms off external requests -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
+    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="https://cdn.prod.website-files.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Preload critical CSS (render-blocking) -->
+    <link rel="preload" href="styles.css" as="style" />
+
+    <!-- Google Fonts (Same as reference: Montserrat, Poppins, Karla) -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Karla:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Particles.js (Same floating particles as reference site) -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- Lottie Player (Same as reference site's Lottie animations) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.12.2/lottie.min.js"></script>
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="body">
+
+    <!-- ============================================ -->
+    <!-- NAVIGATION BAR (Same as reference)           -->
+    <!-- ============================================ -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">HASIN <span>SHAIKH</span></a>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Desktop CTA -->
+        <a href="#contact" class="nav-cta nav-cta-desktop">LET'S CONNECT</a>
+
+        <!-- Mobile Menu Overlay -->
+        <div class="nav-overlay" id="navOverlay"></div>
+        <div class="nav-menu" id="navMenu">
+            <a href="#portfolio" class="nav-menu-link">Portfolio</a>
+            <a href="#services" class="nav-menu-link">Services</a>
+            <a href="#about" class="nav-menu-link">About</a>
+            <a href="#contact" class="nav-menu-link nav-cta">LET'S CONNECT</a>
+        </div>
+    </nav>
+
+    <!-- ============================================ -->
+    <!-- SECTION 1: HERO (Same layout as reference)   -->
+    <!-- ============================================ -->
+    <section class="hero-section" id="home">
+        <div class="hero-grid">
+            <!-- Left Column: Text -->
+            <div class="hero-content">
+                <h2 class="hero-subtitle fade-in">CREATIVE THAT INSPIRES</h2>
+                <h1 class="hero-title fade-in">
+                    Motion Graphics<br/>
+                    Made for <span class="highlight">Impact.</span>
+                </h1>
+                <a href="#contact" class="hero-btn fade-in">Get Started Today</a>
+                <h3 class="hero-tagline fade-in">Currently Learning | Always Creating.</h3>
+            </div>
+
+            <!-- Right Column: Video/Placeholder -->
+            <div class="hero-video-wrapper fade-in">
+                <div class="video-placeholder" id="heroVideo">
+                    <div class="placeholder-content">
+                        <div class="placeholder-icon">🎬</div>
+                        <p class="placeholder-text">Showreel Coming Soon</p>
+                        <p class="placeholder-subtext">Motion Graphics • AI Design • Video Editing</p>
+                    </div>
+                    <!-- Animated background particles for placeholder -->
+                    <div class="placeholder-bg"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 2: SCROLLING MARQUEE BANNER          -->
+    <!-- (Exact same as reference site)               -->
+    <!-- ============================================ -->
+    <section class="scrolling-banner">
+        <div class="carousel-container">
+            <div class="content-container">
+                <div class="icon-text">🎨</div>
+                <div class="marquee-text">Creative Motion</div>
+                <div class="icon-text">🤖</div>
+                <div class="marquee-text">AI Design</div>
+                <div class="icon-text">🎬</div>
+                <div class="marquee-text">Video Editing</div>
+                <div class="icon-text">🌿</div>
+                <div class="marquee-text">Nature Inspired</div>
+                <div class="icon-text">✨</div>
+                <div class="marquee-text">Motion Graphics</div>
+                <div class="icon-text">🎯</div>
+                <div class="marquee-text">Visual Storytelling</div>
+            </div>
+            <div class="content-container">
+                <div class="icon-text">🎨</div>
+                <div class="marquee-text">Creative Motion</div>
+                <div class="icon-text">🤖</div>
+                <div class="marquee-text">AI Design</div>
+                <div class="icon-text">🎬</div>
+                <div class="marquee-text">Video Editing</div>
+                <div class="icon-text">🌿</div>
+                <div class="marquee-text">Nature Inspired</div>
+                <div class="icon-text">✨</div>
+                <div class="marquee-text">Motion Graphics</div>
+                <div class="icon-text">🎯</div>
+                <div class="marquee-text">Visual Storytelling</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Marquee (Same as reference has separate mobile version) -->
+    <section class="scrolling-banner-mobile">
+        <div class="carousel-container-mobile">
+            <div class="content-container-mobile">
+                <div class="icon-text">🎨</div>
+                <div class="marquee-text">Creative Motion</div>
+                <div class="icon-text">🤖</div>
+                <div class="marquee-text">AI Design</div>
+            </div>
+            <div class="content-container-mobile">
+                <div class="icon-text">🎨</div>
+                <div class="marquee-text">Creative Motion</div>
+                <div class="icon-text">🤖</div>
+                <div class="marquee-text">AI Design</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 3: PORTFOLIO SHOWCASE                -->
+    <!-- (Same slider layout as reference)            -->
+    <!-- ============================================ -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="portfolio-header">
+            <h2 class="portfolio-title fade-in">
+                <span>Explore my creative </span><strong>work.</strong>
+            </h2>
+            <!-- Confetti Lottie (same as reference) -->
+            <div class="confetti-lottie lottie-trigger"
+                 data-src="https://cdn.prod.website-files.com/5e615085d7fd17508a705aff/63e3dfc56cb79d7142ced4d8_78667-confetti.json"
+                 data-loop="1"
+                 data-autoplay="1">
+            </div>
+        </div>
+
+        <div class="slider-container" id="portfolioSlider">
+            <div class="slider-track">
+                <!-- Card 1: Motion Graphics -->
+                <div class="slide-card fade-in">
+                    <div class="card-media-wrapper">
+                        <div class="card-media placeholder-card" style="background: linear-gradient(135deg, #1a3a1a, #0D1B0E);">
+                            <div class="card-placeholder-icon">🎨</div>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="view-count" data-target="12500">12.5</span>
+                            <span class="view-suffix">k</span>
+                        </div>
+                    </div>
+                    <div class="card-title">Motion Graphics Reel</div>
+                </div>
+
+                <!-- Card 2: AI Art -->
+                <div class="slide-card fade-in">
+                    <div class="card-media-wrapper">
+                        <div class="card-media placeholder-card" style="background: linear-gradient(135deg, #112a11, #1a3a1a);">
+                            <div class="card-placeholder-icon">🤖</div>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="view-count" data-target="8700">8.7</span>
+                            <span class="view-suffix">k</span>
+                        </div>
+                    </div>
+                    <div class="card-title">AI Art Collection</div>
+                </div>
+
+                <!-- Card 3: Video Editing -->
+                <div class="slide-card fade-in">
+                    <div class="card-media-wrapper">
+                        <div class="card-media placeholder-card" style="background: linear-gradient(135deg, #0D1B0E, #112211);">
+                            <div class="card-placeholder-icon">🎬</div>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="view-count" data-target="22000">22</span>
+                            <span class="view-suffix">k</span>
+                        </div>
+                    </div>
+                    <div class="card-title">Cinematic Edit</div>
+                </div>
+
+                <!-- Card 4: Nature Visuals -->
+                <div class="slide-card fade-in">
+                    <div class="card-media-wrapper">
+                        <div class="card-media placeholder-card" style="background: linear-gradient(135deg, #1a3a1a, #2d5a2d);">
+                            <div class="card-placeholder-icon">🌿</div>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="view-count" data-target="15300">15.3</span>
+                            <span class="view-suffix">k</span>
+                        </div>
+                    </div>
+                    <div class="card-title">Nature Visuals</div>
+                </div>
+
+                <!-- Card 5: Typography Animation -->
+                <div class="slide-card fade-in">
+                    <div class="card-media-wrapper">
+                        <div class="card-media placeholder-card" style="background: linear-gradient(135deg, #112211, #1a3a1a);">
+                            <div class="card-placeholder-icon">✨</div>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="view-count" data-target="6200">6.2</span>
+                            <span class="view-suffix">k</span>
+                        </div>
+                    </div>
+                    <div class="card-title">Typography Animation</div>
+                </div>
+
+                <!-- Card 6: Logo Animation -->
+                <div class="slide-card fade-in">
+                    <div class="card-media-wrapper">
+                        <div class="card-media placeholder-card" style="background: linear-gradient(135deg, #0D1B0E, #1a3a1a);">
+                            <div class="card-placeholder-icon">🎯</div>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="view-count" data-target="9800">9.8</span>
+                            <span class="view-suffix">k</span>
+                        </div>
+                    </div>
+                    <div class="card-title">Logo Animation</div>
+                </div>
+
+                <!-- Card 7: Social Media Content -->
+                <div class="slide-card fade-in">
+                    <div class="card-media-wrapper">
+                        <div class="card-media placeholder-card" style="background: linear-gradient(135deg, #1a3a1a, #112211);">
+                            <div class="card-placeholder-icon">📱</div>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="view-count" data-target="18500">18.5</span>
+                            <span class="view-suffix">k</span>
+                        </div>
+                    </div>
+                    <div class="card-title">Social Media Content</div>
+                </div>
+
+                <!-- Card 8: 3D Animation -->
+                <div class="slide-card fade-in">
+                    <div class="card-media-wrapper">
+                        <div class="card-media placeholder-card" style="background: linear-gradient(135deg, #112a11, #0D1B0E);">
+                            <div class="card-placeholder-icon">🎮</div>
+                        </div>
+                        <div class="card-overlay">
+                            <span class="play-icon">▶</span>
+                            <span class="view-count" data-target="11000">11</span>
+                            <span class="view-suffix">k</span>
+                        </div>
+                    </div>
+                    <div class="card-title">3D Animation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 4: FRIENDS / CLIENTS                 -->
+    <!-- (Same as reference: particles bg + logo carousel) -->
+    <!-- ============================================ -->
+    <section class="friends-section">
+        <div id="particles-js"></div>
+        <div class="friends-content">
+            <div class="friends-label fade-in">Trusted By</div>
+
+            <!-- Lottie handshake animation (similar to reference) -->
+            <div class="friends-lottie-wrapper fade-in">
+                <div class="friends-lottie lottie-trigger"
+                     data-src="https://cdn.prod.website-files.com/5e615085d7fd17508a705aff/66a7f1c07da229970d3325ba_JWcAgdn6ZM.json"
+                     data-loop="0"
+                     data-autoplay="0">
+                </div>
+            </div>
+
+            <!-- Logo Carousel (Same infinite CSS animation as reference) -->
+            <div class="logo-carousel-wrapper">
+                <div class="logo-carousel">
+                    <div class="logo-items fade-in">
+                        <!-- Placeholder logos using styled text (replace with real logos later) -->
+                        <div class="logo-text-item">Sixth Sense Academy</div>
+                        <div class="logo-text-item">Creative Studio</div>
+                        <div class="logo-text-item">MotionLab</div>
+                        <div class="logo-text-item">AI Visuals Co.</div>
+                        <div class="logo-text-item">Digital Arts Hub</div>
+                        <div class="logo-text-item">Pixel Perfect</div>
+                        <div class="logo-text-item">VFX Masters</div>
+                        <div class="logo-text-item">Frame Studio</div>
+                        <div class="logo-text-item">CineMotion</div>
+                        <div class="logo-text-item">ArtFlow</div>
+                    </div>
+                    <div class="logo-items">
+                        <div class="logo-text-item">Sixth Sense Academy</div>
+                        <div class="logo-text-item">Creative Studio</div>
+                        <div class="logo-text-item">MotionLab</div>
+                        <div class="logo-text-item">AI Visuals Co.</div>
+                        <div class="logo-text-item">Digital Arts Hub</div>
+                        <div class="logo-text-item">Pixel Perfect</div>
+                        <div class="logo-text-item">VFX Masters</div>
+                        <div class="logo-text-item">Frame Studio</div>
+                        <div class="logo-text-item">CineMotion</div>
+                        <div class="logo-text-item">ArtFlow</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 5: SERVICES - "More than motion"     -->
+    <!-- (Same 3-card grid as reference)              -->
+    <!-- ============================================ -->
+    <section class="services-section" id="services">
+        <div class="services-header">
+            <div class="services-label fade-in">More than motion.</div>
+            <h1 class="services-title fade-in">
+                FULL-SERVICE CREATIVE SOLUTIONS<br/>
+                BUILT FOR <span class="highlight">Impact.</span>
+            </h1>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">🤖</div>
+                <h3>AI-Powered Design</h3>
+                <p>Harnessing cutting-edge AI tools to create stunning visuals, generate unique concepts, and push the boundaries of digital creativity.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">🎨</div>
+                <h3>Motion Graphics</h3>
+                <p>From ideas to the final animation, bringing your stories to life with fluid movement, dynamic transitions, and captivating visual narratives.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">🎬</div>
+                <h3>Video Editing</h3>
+                <p>Professional post-production that transforms raw footage into polished masterpieces with seamless cuts, color grading, and sound design.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 6: SERVICE DETAILS                   -->
+    <!-- (Same alternating layout as reference)       -->
+    <!-- ============================================ -->
+    <section class="service-details-wrapper">
+        <!-- Detail 1: Your Vision. Animated. -->
+        <div class="service-detail">
+            <div class="detail-container">
+                <div class="detail-text fade-in-left">
+                    <h2 class="light">Your Vision. Animated.</h2>
+                    <p class="light-text">I bring ideas to life through captivating motion graphics. Whether it's a logo reveal, explainer video, or social media content — every frame tells your story with purpose and style.</p>
+                </div>
+                <div class="detail-image fade-in-right">
+                    <div class="floating-graphic graphic-1">
+                        <div class="graphic-circle">
+                            <span>🎨</span>
+                        </div>
+                        <div class="graphic-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail 2: AI-Driven Creativity (reversed) -->
+        <div class="service-detail alt-bg">
+            <div class="detail-container reverse">
+                <div class="detail-text fade-in-right">
+                    <h2 class="green">AI-Driven Creativity</h2>
+                    <p class="dark-text">Leveraging the latest AI tools and techniques to generate unique artwork, enhance designs, and explore creative possibilities that were never before possible.</p>
+                </div>
+                <div class="detail-image fade-in-left">
+                    <div class="floating-graphic graphic-2">
+                        <div class="graphic-circle">
+                            <span>🤖</span>
+                        </div>
+                        <div class="graphic-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail 3: Cinematic Video Editing -->
+        <div class="service-detail">
+            <div class="detail-container">
+                <div class="detail-text fade-in-left">
+                    <h2 class="light">Cinematic Video Editing</h2>
+                    <p class="light-text">Professional editing that transforms raw footage into compelling visual stories. Precise cuts, seamless transitions, color grading, and sound design — all crafted to perfection.</p>
+                </div>
+                <div class="detail-image fade-in-right">
+                    <div class="floating-graphic graphic-3">
+                        <div class="graphic-circle">
+                            <span>🎬</span>
+                        </div>
+                        <div class="graphic-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detail 4: Always Learning (reversed) -->
+        <div class="service-detail alt-bg">
+            <div class="detail-container reverse">
+                <div class="detail-text fade-in-right">
+                    <h2 class="green">Always Learning. Always Growing.</h2>
+                    <p class="dark-text">Currently upskilling at Sixth Sense Animation Academy in AI, Motion Graphics & Video Editing. I believe in continuous learning and mastering every new creative tool that emerges.</p>
+                </div>
+                <div class="detail-image fade-in-left">
+                    <div class="floating-graphic graphic-4">
+                        <div class="graphic-circle">
+                            <span>📚</span>
+                        </div>
+                        <div class="graphic-dots"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 7: CREATIVE RECIPE                   -->
+    <!-- (Same as reference "Our Creative Recipe")    -->
+    <!-- ============================================ -->
+    <section class="recipe-section">
+        <div class="recipe-header">
+            <h1 class="recipe-title fade-in">My Creative Recipe.</h1>
+        </div>
+
+        <div class="services-grid recipe-grid">
+            <div class="service-card fade-in">
+                <div class="service-icon">💡</div>
+                <h3>Research & Ideation</h3>
+                <p>Every project starts with deep research. I study trends, analyze references, and brainstorm concepts that resonate with the target audience.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">⚡</div>
+                <h3>Rapid Production</h3>
+                <p>Streamlined workflows and modern tools mean your projects move from concept to completion quickly — without sacrificing quality.</p>
+            </div>
+
+            <div class="service-card fade-in">
+                <div class="service-icon">💎</div>
+                <h3>Polish & Deliver</h3>
+                <p>Every detail matters. Final outputs are refined, reviewed, and delivered in the exact formats you need — ready for any platform.</p>
+            </div>
+        </div>
+
+        <!-- Recipe sub-sections (same alternating layout as reference) -->
+        <div class="recipe-details">
+            <div class="service-detail">
+                <div class="detail-container">
+                    <div class="detail-text fade-in-left">
+                        <h2 class="light">Start with great ideas.</h2>
+                        <p class="light-text">I research what's trending, study the best creative work, and develop concepts that capture attention and tell compelling stories.</p>
+                    </div>
+                    <div class="detail-image fade-in-right">
+                        <div class="floating-graphic">
+                            <div class="graphic-circle"><span>🔍</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-detail alt-bg">
+                <div class="detail-container reverse">
+                    <div class="detail-text fade-in-right">
+                        <h2 class="green">Make them fast.</h2>
+                        <p class="dark-text">Speed matters in the creative world. My efficient workflow ensures projects are delivered on time while trends are still relevant.</p>
+                    </div>
+                    <div class="detail-image fade-in-left">
+                        <div class="floating-graphic">
+                            <div class="graphic-circle"><span>🚀</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-detail">
+                <div class="detail-container">
+                    <div class="detail-text fade-in-left">
+                        <h2 class="light">Work with passion.</h2>
+                        <p class="light-text">I love what I do — from adventure movies to nature-inspired visuals. That passion shows in every frame and every design I create.</p>
+                    </div>
+                    <div class="detail-image fade-in-right">
+                        <div class="floating-graphic">
+                            <div class="graphic-circle"><span>❤️</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-detail alt-bg">
+                <div class="detail-container reverse">
+                    <div class="detail-text fade-in-right">
+                        <h2 class="green">Quality at every frame.</h2>
+                        <p class="dark-text">Whether it's one project or ten — quality never drops. Every pixel, every transition, every effect is crafted with care.</p>
+                    </div>
+                    <div class="detail-image fade-in-left">
+                        <div class="floating-graphic">
+                            <div class="graphic-circle"><span>🏆</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 8: ABOUT ME / MEET HASIN SHAIKH      -->
+    <!-- (Same as reference "Meet the Snack Team")    -->
+    <!-- ============================================ -->
+    <section class="about-section" id="about">
+        <!-- Lottie "Who is" animation (same style as reference) -->
+        <div class="about-lottie-wrapper">
+            <div class="about-lottie lottie-trigger"
+                 data-src="https://cdn.prod.website-files.com/5e615085d7fd17508a705aff/66998b38403c9c57ec19e4e2_whoissnackbest.lottie"
+                 data-loop="1"
+                 data-autoplay="1">
+            </div>
+        </div>
+
+        <h1 class="about-title fade-in">Meet <span class="highlight">Hasin Shaikh</span></h1>
+
+        <div class="profile-cards-grid">
+            <!-- Main Profile Card -->
+            <div class="profile-card main-card fade-in">
+                <div class="profile-image">
+                    <span>HS</span>
+                </div>
+                <p class="greeting">Hey, everyone!</p>
+                <h2 class="name">I'm Hasin</h2>
+                <p class="role">Motion & AI Designer</p>
+                <p class="bio">35-year-old creative enthusiast currently mastering AI, Motion Graphics & Video Editing at Sixth Sense Animation Academy. I'm driven by curiosity, inspired by nature's greenery, and energized by adventure movies. I believe in the power of joint family, continuous learning, and pushing creative boundaries every single day.</p>
+            </div>
+
+            <!-- Skills Card -->
+            <div class="profile-card fade-in">
+                <div class="profile-image skills-icon">
+                    <span>🎯</span>
+                </div>
+                <p class="greeting">My Skills</p>
+                <h2 class="name">What I Do</h2>
+                <p class="role">Creative Suite</p>
+                <div class="skills-list">
+                    <span class="skill-tag">Motion Graphics</span>
+                    <span class="skill-tag">AI Art & Design</span>
+                    <span class="skill-tag">Video Editing</span>
+                    <span class="skill-tag">Visual Effects</span>
+                    <span class="skill-tag">Color Grading</span>
+                    <span class="skill-tag">Typography</span>
+                </div>
+            </div>
+
+            <!-- Passions Card -->
+            <div class="profile-card fade-in">
+                <div class="profile-image passion-icon">
+                    <span>🌿</span>
+                </div>
+                <p class="greeting">My Passions</p>
+                <h2 class="name">What I Love</h2>
+                <p class="role">Beyond Design</p>
+                <div class="passion-list">
+                    <div class="passion-item">🌿 Nature & Greenery</div>
+                    <div class="passion-item">🎬 Adventure Movies</div>
+                    <div class="passion-item">👨‍👩‍👧‍👦 Joint Family</div>
+                    <div class="passion-item">📚 Learning New Things</div>
+                    <div class="passion-item">🚀 Upskilling Myself</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 9: TESTIMONIALS                      -->
+    <!-- (Same as reference review section)           -->
+    <!-- ============================================ -->
+    <section class="testimonials-section">
+        <div class="testimonials-header">
+            <h2 class="testimonials-title fade-in">What People <span class="highlight">Say</span></h2>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="quote">"Hasin's motion graphics work is absolutely stunning. His attention to detail and creative vision brought our project to life in ways we never imagined."</p>
+                <p class="author">— Creative Director, Studio X</p>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="quote">"Working with Hasin was a great experience. His passion for learning and incorporating AI into design gives him a unique edge that sets him apart."</p>
+                <p class="author">— Project Manager, Digital Agency</p>
+            </div>
+
+            <div class="testimonial-card fade-in">
+                <div class="stars">⭐⭐⭐⭐⭐</div>
+                <p class="quote">"Hasin's dedication to upskilling and his natural creative talent make him a standout designer. His nature-inspired visuals are truly one of a kind."</p>
+                <p class="author">— Instructor, Sixth Sense Academy</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- SECTION 10: CTA / CONTACT                    -->
+    <!-- (Same CTA layout as reference)               -->
+    <!-- ============================================ -->
+    <section class="cta-section" id="contact">
+        <h1 class="cta-title fade-in">
+            Ready to Create<br/>Something <span class="highlight">Amazing?</span>
+        </h1>
+
+        <p class="cta-email fade-in">
+            Reach me at <a href="mailto:hasinshaikh598@gmail.com">hasinshaikh598@gmail.com</a>
+        </p>
+
+        <a href="mailto:hasinshaikh598@gmail.com" class="cta-btn fade-in">Let's Talk</a>
+
+        <div class="social-links fade-in">
+            <a href="#" title="Instagram" aria-label="Instagram">📸</a>
+            <a href="#" title="LinkedIn" aria-label="LinkedIn">💼</a>
+            <a href="#" title="YouTube" aria-label="YouTube">🎥</a>
+            <a href="#" title="Behance" aria-label="Behance">🎨</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!-- FOOTER                                       -->
+    <!-- ============================================ -->
+    <footer class="footer">
+        <a href="#" class="footer-logo">HASIN <span>SHAIKH</span></a>
+        <p class="footer-text">© 2026 Hasin Shaikh. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </footer>
+
+    <!-- DSA Performance Engine (12 Data Structures & Algorithms) -->
+    <script src="performance.js"></script>
+    <!-- Main Application (uses DSA engine) -->
+    <script src="script.js"></script>
+</body>
+</html>
